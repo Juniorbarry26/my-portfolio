@@ -1,0 +1,17 @@
+.text-purple {
+  color: #9b87f5;
+}
+
+.navbar .nav-link {
+  margin-left: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar .nav-link.active {
+  color: #9b87f5;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}

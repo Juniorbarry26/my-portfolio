@@ -20,6 +20,7 @@
 }
 .btn-outline-dark:hover {
   background-color: #8a74e4;
+  border: none;
 }
 
 .btn-purple:hover {

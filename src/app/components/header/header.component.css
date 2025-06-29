@@ -2,7 +2,7 @@
   color: #9b87f5;
 }
 
-.navbar .nav-link {
+.navbar .nav-link .nav-item {
   margin-left: 16px;
   font-weight: 500;
   color: #333;
@@ -14,4 +14,9 @@
 
 .navbar-brand {
   font-size: 1.5rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: #9b87f5;
 }

@@ -7,11 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/services', label: 'Services' },
-    { path: '/testimonials', label: 'Testimonials' },
-    { path: '/contact', label: 'Contact' }
+    { path: '#home', label: 'Home' },
+    { path: '#about', label: 'About' },
+    { path: '#projects', label: 'Projects' },
+    { path: '#services', label: 'Services' },
+    { path: '#testimonials', label: 'Testimonials' },
+    { path: '#contact', label: 'Contact' }
   ];
+
+  scrollToSection(sectionId: string) {
+    const el = document.querySelector(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

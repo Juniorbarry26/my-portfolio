@@ -1,0 +1,23 @@
+.footer .owner {
+  color: #a78bfa;
+}
+
+.footer-divider {
+  width: 75%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .footer p {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+
+  .footer .footer-divider {
+    width: 90%;
+  }
+
+  .footer .owner {
+    font-size: 1rem;
+  }
+}

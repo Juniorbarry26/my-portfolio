@@ -1,0 +1,75 @@
+/* Service Section Styling */
+.services .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.services .card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.icon-container i {
+  font-size: 2.5rem;
+  color: #9b87f5;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body:hover .icon-container i,
+.card-body:hover .card-title {
+  color: #8d75f5;
+  transform: scale(1.1);
+}
+
+/* Dot bullets */
+.item .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #9b87f5;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* CTA Button */
+.btn-purple {
+  background-color: #9b87f5;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #8d75f5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(111, 66, 193, 0.3);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 576px) {
+  .services .card-title {
+    font-size: 1.2rem;
+  }
+
+  .services .card-text {
+    font-size: 0.95rem;
+  }
+
+  .icon-container i {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .services {
+    padding: 2rem 1rem;
+  }
+}

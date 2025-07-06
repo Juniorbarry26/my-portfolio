@@ -2,21 +2,41 @@
   color: #9b87f5;
 }
 
-.navbar .nav-link .nav-item {
+
+.navbar .nav-link {
   margin-left: 16px;
   font-weight: 500;
   color: #333;
+  transition: color 0.3s ease;
 }
+
+
+.navbar .nav-link:hover {
+  color: #9b87f5;
+}
+
 
 .navbar .nav-link.active {
   color: #9b87f5;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
+
+.navbar .nav-item:hover {
+  cursor: pointer;
 }
 
-.nav-item:hover {
-  cursor: pointer;
+.navbar .nav-link {
+  transition: color 0.2s ease-in-out;
+}
+/* Default nav link styles */
+.navbar .nav-link {
+  margin-left: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* On hover */
+.navbar .nav-link:hover {
   color: #9b87f5;
 }

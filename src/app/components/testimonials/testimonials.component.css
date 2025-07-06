@@ -1,0 +1,48 @@
+body {
+      background-color: #f8f9fa;
+}
+
+.testimonial-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.avatar-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #b28bfc;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+      font-size: 2rem;
+      font-weight: 700;
+}
+
+.subtitle {
+      color: #6c757d;
+      margin-bottom: 2rem;
+}
+
+.btn-purple {
+      background-color: #a78bfa;
+      color: #fff;
+      font-weight: 600;
+}
+
+.btn-purple:hover {
+      background-color: #8b6efb;    
+}

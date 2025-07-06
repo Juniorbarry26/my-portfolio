@@ -15,10 +15,14 @@ export class HeaderComponent {
     { path: '#contact', label: 'Contact' }
   ];
 
-  scrollToSection(sectionId: string) {
-    const el = document.querySelector(sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+currentSection = '';
+
+scrollToSection(sectionId: string) {
+  const el = document.querySelector(sectionId);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+    this.currentSection = sectionId;
   }
+}
+
 }

@@ -1,0 +1,49 @@
+/* Card hover: scale + purple shadow */
+#projects {
+  background-color: #f4f2f2;
+}
+
+#projects .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+#projects .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(155, 87, 245, 0.2); /* subtle purple shadow */
+  border-color: #9b87f5; /* optional: purple border */
+}
+
+/* Icon hover: lift + purple color */
+#projects .btn i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#projects .btn:hover i {
+  transform: translateY(-2px);
+  color: #9b87f5; /* custom purple */
+}
+
+/* Button border turns purple on hover */
+#projects .btn-outline-primary:hover {
+  border-color: #9b87f5;
+  background-color: rgba(155, 87, 245, 0.05); /* slight background tint */
+  color: #9b87f5;
+}
+
+#projects .btn-outline-dark:hover {
+  border-color: #9b87f5;
+  background-color: rgba(155, 87, 245, 0.05);
+  color: #9b87f5;
+}
+
+/* Optional: Card image styling */
+#projects .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.badge {
+  background-color: #e1d9fe;
+  color: #6a4bdb;
+}

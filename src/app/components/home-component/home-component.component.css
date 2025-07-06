@@ -3,8 +3,11 @@
   padding: 100px 20px 50px;
   background-color: #f9f9f9;
 }
-.border-none {
-  width: 700px;
+
+.border-none-responsive {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .text-purple {
@@ -18,18 +21,18 @@
   border-radius: 8px;
   border: none;
 }
+
+.btn-purple:hover,
 .btn-outline-dark:hover {
   background-color: #8a74e4;
+  color: white;
   border: none;
-}
-
-.btn-purple:hover {
-  background-color: #8a74e4;
 }
 
 .btn-outline-dark {
   padding: 10px 20px;
   border-radius: 8px;
+  border: 1px solid #333;
 }
 
 .social-icons i {
@@ -43,20 +46,40 @@
   transform: scale(1.2);
 }
 
-
-
 .scroll-arrow {
   color: #6c757d;
-  animation: bounce-down 1.5s infinite ease-in-out;
   font-size: 2rem;
-}
-.scroll-arrow {
-  color: #6c757d;
   transition: all 0.3s ease;
   cursor: pointer;
+  animation: bounce-down 1.5s infinite ease-in-out;
 }
 
 .scroll-arrow:hover {
   color: #9b87f5;
-  transform: translateY(6px); /* move down slightly */
+  transform: translateY(6px);
+}
+
+/* Bouncy scroll animation */
+@keyframes bounce-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* RESPONSIVE TEXT */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+
+  .home-container {
+    padding: 80px 10px 40px;
+  }
 }

@@ -14,6 +14,15 @@
   border-color: #9b87f5; /* optional: purple border */
 }
 
+.btn {
+  border-color: #9b87f5;
+  color: #9b87f5;
+}
+
+.btn:hover {
+  color: #6a4bdb;
+  border-color: #6a4bdb;
+}
 /* Icon hover: lift + purple color */
 #projects .btn i {
   transition: transform 0.3s ease, color 0.3s ease;
@@ -21,20 +30,20 @@
 
 #projects .btn:hover i {
   transform: translateY(-2px);
-  color: #9b87f5; /* custom purple */
+ /* custom purple */
 }
 
 /* Button border turns purple on hover */
 #projects .btn-outline-primary:hover {
-  border-color: #9b87f5;
+  border-color: #6a4bdb;
   background-color: rgba(155, 87, 245, 0.05); /* slight background tint */
-  color: #9b87f5;
+  color: #6a4bdb;
 }
 
 #projects .btn-outline-dark:hover {
-  border-color: #9b87f5;
+  border-color: #6d54d8;
   background-color: rgba(155, 87, 245, 0.05);
-  color: #9b87f5;
+  color: #6d54d8;
 }
 
 /* Optional: Card image styling */
@@ -44,6 +53,6 @@
 }
 
 .badge {
-  background-color: #e1d9fe;
-  color: #6a4bdb;
+  background-color: #ebe7f9;
+  color: #6443d9;
 }

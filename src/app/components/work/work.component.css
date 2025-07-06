@@ -23,6 +23,8 @@
 .btn:hover {
   transform: scale(1,1);
   transition: all ease-in-out;
+  background-color: #8d6cf0;
+  color: white;
 }
 .info-box {
   background-color: #f8f9fa;
@@ -30,6 +32,7 @@
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 
 .avatar-icon {
   font-size: 1.2rem;
@@ -49,5 +52,6 @@
 
 .social-icons i:hover {
   background-color: #e0e7ff;
-  color: #4f46e5;
+  color: #8d6cf0;
 }
+

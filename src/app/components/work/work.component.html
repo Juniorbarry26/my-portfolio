@@ -1,4 +1,4 @@
-<section class="contact-section text-center">
+<section id="contact" class="contact-section text-center bg-light">
   <div class="container py-5">
     <h2 class="fw-bold mb-3">Let's Work Together</h2>
     <p class="mb-5 text-muted">
@@ -8,31 +8,27 @@
     <div class="row g-5 align-items-start">
       <div class="col-md-7">
         <div class="contact-card text-start">
-          <form>
+          <form action="https://formspree.io/f/mrbkvapz" method="POST">
             <div class="row mb-3">
               <div class="col">
                 <label for="fullName" class="form-label">Full Name</label>
-                <input id="fullName" name="fullName" type="text" class="form-control" placeholder="John Doe" />
+                <input id="fullName" name="fullName" type="text" class="form-control" placeholder="John Doe" required />
               </div>
               <div class="col">
                 <label for="email" class="form-label">Email Address</label>
-                <input id="email" name="email" type="email" class="form-control" placeholder="john@example.com" />
+                <input id="email" name="email" type="email" class="form-control" placeholder="john@example.com" required />
               </div>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
-              <input id="subject" name="subject" type="text" class="form-control" placeholder="Project Inquiry" />
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="Project Inquiry" required />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-control"
-                rows="5"
-                placeholder="Tell me about your project..."
-              ></textarea>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
             </div>
+            <!-- Optional: Disable captcha -->
+            <input type="hidden" name="_captcha" value="false" />
             <div class="text-center">
               <button type="submit" class="btn btn-send w-100">
                 <i class="bi bi-send me-2"></i>Send Message
@@ -51,7 +47,7 @@
 
           <div class="info-box d-flex align-items-center">
             <i class="bi bi-envelope avatar-icon"></i>
-            <span><a href="mailto:alsainey7@gmail.com">alsainey&#64;gmail.com</a></span>
+            <span><a href="mailto:alsainey7@gmail.com">alsainey7&#64;gmail.com</a></span>
           </div>
 
           <div class="info-box d-flex align-items-center">
@@ -65,20 +61,53 @@
               <a href="https://github.com/Juniorbarry26" target="_blank" class="py-3" rel="noopener noreferrer">
                 <i class="bi bi-github px-3"></i>
               </a>
-
-              <a href="https://www.linkedin.com/in/alsainey-barry-b1907a212/" class="py-3"  >
-                <i class="bi bi-linkedin"></i>
+              <a href="https://www.linkedin.com/in/alsainey-barry-b1907a212/" class="py-3">
+                <i class="bi bi-linkedin px-3"></i>
               </a>
-
               <a href="https://wa.me/2203444935" target="_blank" class="py-3" rel="noopener noreferrer">
-                <i class="bi bi-chat-dots"></i>
+                <i class="bi bi-chat-dots px-3"></i>
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- 
+<script>
+  const form = document.getElementById("contactForm");
+  const alertBox = document.getElementById("form-alert");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("https://formspree.io/f/xyzbqklj", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        alertBox.className = "alert alert-success";
+        alertBox.textContent = "✅ Message sent successfully!";
+        alertBox.classList.remove("d-none");
+        form.reset();
+      } else {
+        throw new Error("Form submission failed");
+      }
+    })
+    .catch(error => {
+      alertBox.className = "alert alert-danger";
+      alertBox.textContent = "❌ Oops! Something went wrong. Please try again.";
+      alertBox.classList.remove("d-none");
+    });
+  });
+</script> -->
 
 <app-end-part></app-end-part>
